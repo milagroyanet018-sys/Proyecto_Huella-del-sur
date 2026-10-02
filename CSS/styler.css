@@ -1,0 +1,352 @@
+/*Index*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 246, 246)
+}
+
+.navbar {
+    background-color: #5971d2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(244, 252, 247);
+}
+
+.nav-link {
+    color: aliceblue;
+    font-weight: 100;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#inicio {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#Inicio h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#Inicio p{
+    color: #ffffff;
+}
+
+.caja-centro {
+    background-color: #5971d2 !important; 
+}
+
+#Talleres {
+    padding: 30px 20px;
+}
+
+#Talleres .container {
+    margin-bottom: 30px;
+
+}
+
+#talleres .col {
+    display: flex;
+    justify-content: center;
+}
+
+/*Los botones*/
+.btn-primary {
+    background-color: #C9432B !important;
+    border-color: #822e20 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #762315 !important;
+    border-color: #51150a !important;
+}
+
+/* Color para el botón Ver mas */
+.btn-secondary {
+    background-color: #F2A900 !important;
+    border-color: #cc9108 !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary:hover {
+    background-color: #c18a09 !important;
+}
+
+/*Cronogramas*/
+#Cronograma img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px; 
+}
+
+
+/*Parte del formulario*/
+body .body-myFrom {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+form {
+    background-color: rgb(178, 255, 127);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+form label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/*color del formulario*/
+form input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0 20px;
+}
+
+.radio-group input[type="radio"],
+.radio-group label {
+    cursor: pointer;
+}
+
+/*BOTONES de Cancelar y Enviar*/
+.botones-formulario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-cancelar {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+    /* Efecto suave al pasar el mouse */
+    cursor: pointer;
+    background-color: #1868b0;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+/* Efecto al pasar el mouse por Cancelar */
+.btn-cancelar:hover {
+    background-color: #90a5b7;
+}
+
+/* Botón Enviar */
+.btn-formulario {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    /* Efecto suave al pasar el mouse */
+    cursor: pointer;
+    background-color: #1868b0;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+/*Efecto al pasar el mouse por Enviar */
+.btn-formulario:hover {
+    background-color: #90a5b7;
+}
+
+.btn-formulario {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1868b0;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+/*Parte de JavaScrip*/
+/*formulario en el centro*/
+body.body-myFrom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1868b0;
+}
+
+#myFrom {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#myFrom input[type="text"],
+#myFrom input[type="email"],
+#myFrom input[type="Gmail"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*estado*/
+#mensaje-estado {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#mensaje-estado.error {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #d9534f;
+}
+
+#mensaje-estado.exito {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #5cb85c;
+}
+
+
+/*Parte del footer*/
+footer {
+    background-color: #4d72d0;
+    color: #ffffff;
+    padding: 2.5rem 0;
+}
+
+footer img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+#Contactos p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Iconos colores*/
+#Contactos i {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+/*Sesion de galeria*/
+.Presentacion {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Imagen principal del taller */
+.Presentacion>img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Galería en fila responsiva */
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Galeria img {
+    flex: 1 1 280px;
+    max-width: 320px;
+    height: 220px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Adaptacion en Celular*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .card {
+        margin: 0 auto;
+        width: 100% !important; 
+        max-width: 320px;      
+    }
+
+    .body-myFrom {
+        padding: 15px;
+    }
+    
+    #myFrom {
+        width: 100% !important;
+        padding: 20px !important;
+    }
+
+    footer #Contactos .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

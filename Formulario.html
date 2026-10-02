@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preinscripcion</title>
+    <link rel="icon" type="image/png" href="IMG/Logo.png">
+    <link rel="stylesheet" href="CSS/styler.css">
+</head>
+
+<body class="body-myFrom">
+    <form id="myFrom" novalidate>
+        <h1>Preinscripcion de Taller</h1>
+        <p>Rellene el siguiente formulario para inscribirse en el taller.</p>
+        <p id="mensaje-estado"></p>
+        <label for="Nombre">Nombre y Apellido</label>
+        <input type="Nombre" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre" required>
+        <br>
+        <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        <br>
+        <label for="DNI">DNI</label>
+        <input type="text" id="DNI" name="DNI" placeholder="Ingrese su DNI sin puntos" required>
+        <br>
+        <label for="Gmail">Correo electronico</label>
+        <input type="Gmail" id="Gmail" name="Gmail" placeholder="ejemplo@Gmail.com" required>
+        <br>
+        <label for="Dirrecion">Direccion</label>
+        <input type="Direccion" id="Direccion" name="Direccion" placeholder="Ingrese su ubicacion" required>
+        <br>
+        <label for="Telefono">Telefono</label>
+        <input type="Telefono" id="Telefono" name="Telefono" placeholder="Ingrese su Telefono" required>
+        <br>
+        <label for="Genero">Genero:</label>
+        <div class="radio-group">
+            <input type="radio" id="fem" name="genero" value="femenino">
+            <label for="fem">Femenino</label>
+            <input type="radio" id="masc" name="genero" value="masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">No Binario / Prefiero no decir</label>
+        </div>
+        <br>
+        <div class="botones-formulario">
+            <a href="Index.html" class="btn-cancelar">Cancelar</a>
+            <button type="submit" class="btn-formulario">Enviar</button>
+        </div>
+
+    </form>
+    <script src="JavaScrip.js"></script>
+</body>
+
+</html>
